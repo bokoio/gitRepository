@@ -2070,3 +2070,179 @@ class Animal(object):
 
 hippo = Animal("Lontra Feiosa", 8)
 hippo.description
+-------------------------------------------------------
+ealth que contém a string "boa"
+
+
+Finalmente, exiba (print) a saúde (health) de hippo, sloth, e ocelot em três linhas separadas.
+
+
+
+
+class Animal(object):
+    """Cria animais bonitinhos."""
+    is_alive = True
+    health = "boa"
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def description(self):
+        print self.name 
+        print self.age
+
+hippo = Animal("Lontra Feiosa", 8)
+hippo.description
+sloth = Animal("Pipico", 6)
+ocelot = Animal("Comedia",9)
+
+print hippo.health
+print sloth.health
+print ocelot.health
+
+------------------------------
+
+#Não São Só Animais e Frutas
+#Classes como Animal e Fruit tornam fácil compreender os conceitos de classes e instâncias
+#mas você provavelmente não verá muitas zebras ou limões em programas do mundo real.
+
+#Entretanto, classes e objetos são muitas vezes usados para modelar objetos do mundo real.
+#O código no editor é uma demonstração mais realista do tipo de classes e objetos que você encontrará em softwares comerciais.
+#Aqui temos uma classe ShoppingCart básica para criar objetos "carrinho de compras" para clientes do website;
+#embora básico, é similar ao que você veria em um programa real.
+
+#Instruções
+#Crie uma instância de ShoppingCart chamada my_cart. 
+#Inicialize-a com quaisquer valores que quiser, 
+#então use o método add_item para adicionar um item ao seu carrinho.
+
+class ShoppingCart(object):
+    """Cria objetos carrinhos de compra (shopping cart)
+    para os usuarios do nosso belo website."""
+    items_in_cart = {}
+    def __init__(self, customer_name):
+        self.customer_name = customer_name
+
+    def add_item(self, product, price):
+        """Adiciona o produto ao carrinho."""
+        if not product in self.items_in_cart:
+            self.items_in_cart[product] = price
+            print product + " added."
+        else:
+            print product + " ja esta no carrinho."
+
+    def remove_item(self, product):
+        """Remove o produto do carrinho."""
+        if product in self.items_in_cart:
+            del self.items_in_cart[product]
+            print product + " removido."
+        else:
+            print product + " nao esta no carrinho."
+
+my_cart = ShoppingCart("Bobeiras")
+my_cart.add_item("Nada", 19)
+------------------------------
+#Cuidado: Aqui Há Dragões
+#Herança é um conceito complicado, então vamos examiná-lo passo a passo.
+
+#Herança é o processo pelo qual uma classe assume os atributos e métodos de outra, e é usada para expressar um relacionamento é-um.
+#Por exemplo, um Panda é um urso, então a classe Panda poderia herdar de uma classe Bear (urso).
+#Entretanto, um Toyota não é um trator, então não deve herdade da classe Tractor (Trator) (mesmo se eles tiverem muitos atributos e métodos em comum).
+#Em vez disso, Toyota e Tractor devem herdar da mesma classe, Vehicle (Veículo).
+
+#Instruções
+#Leia o código no editor. Nós definimos uma classe, Customer, além de uma classe ReturningCustomer que herda de Customer.
+#Note que não definimos o método display_cart no corpo de ReturningCustomer, mas ele ainda terá acesso a esse método por meio da herança.
+#Clique em Salvar e Enviar Código para ver por si mesmo!
+class Customer(object):
+    """Produz objetos que representam consumidores."""
+    def __init__(self, customer_id):
+        self.customer_id = customer_id
+
+    def display_cart(self):
+        print "Sou uma string que representa o conteudo do seu carrinho de compras!"
+
+class ReturningCustomer(Customer):
+    """Para clientes que voltam sempre."""
+    def display_order_history(self):
+        print "Sou uma string que representa seu historico de compras!"
+
+monty_python = ReturningCustomer("ID: 12345")
+monty_python.display_cart()
+monty_python.display_order_history()
+----------------------------------
+#Sintaxe da Herança
+#No Python, herança funciona assim:
+
+class DerivedClass(BaseClass):
+    # codigo vem aqui
+
+#em que DerivedClass e a nova classe que voce estacriando e BaseClass e a classe da qual a nova classe herda.
+
+#Instruções
+#Nas linhas 1-4, criamos uma classe chamada Shape.
+
+#Crie sua própria classe, Triangle, que herda de Shape, assim:
+
+class Triangle(Shape):
+    # o codigo vem aqui
+
+#Dentro da classe Triangle, escreva uma função __init__() que toma quatro argumentos: self, side1, side2, e side3.
+
+#Dentro da função __init__(), faça self.side1 = side1, self.side2 = side2, e self.side3 = side3.
+
+class Shape(object):
+    """Cria formas!"""
+    def __init__(self, number_of_sides):
+        self.number_of_sides = number_of_sides
+
+# Adicione sua classe Triangle abaixo!
+class Triangle(Shape):
+	def __init__(self, side1, side2,side3):
+	    self.side1 = side1
+	    self.side2 = side2
+	    self.side3 = side3
+-----------------------------------------
+#Sobrepujar!
+#Às vezes você vai querer que uma classe que herda de outra não só tome os métodos e atributos do seu "pai", 
+#mas que contorne um ou mais deles.
+
+class Employee(object):
+    def __init__(self, name):
+        self.name = name
+    def greet(self, other):
+        print "Alo, %s" % other
+
+class CEO(Employee):
+    def greet(self, other):
+        print "Volte ao trabalho, %s!" % other.name
+
+ceo = CEO("Emily")
+emp = Employee("Steve")
+emp.greet(ceo)
+# Alo, Emilyrr<rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<r<rr
+ceo.greet(emp)
+# Volte ao trabalho, Steve!
+
+#Em vez de ter um método greet_underling separado para nosso CEO, contornamos (ou recriamos) o método greet no topo do método base Employee.greet. 
+#Desse modo, não precisamos conhecer que tipo de funcionário (Employee) temos antes de cumprimentar outro funcionário.
+
+#Instruções
+#Crie uma nova classe, PartTimeEmployee, que herda de Employee.
+#Dê a sua classe derivada um método calculate_wage que contorna o de Employee. Ele deve tomar self e hours como argumentos.
+#Como PartTimeEmployee.calculate_wage contona Employee.calculate_wage, ele ainda precisa fazer self.hours = hours.
+#Ele deve retornar o número de horas (hours que o trabalhador de meio período trabalhou multiplicado por 12.00 
+#(ou seja, ele recebe R$12.00 por hora em vez de R$20.00).
+
+class Employee(object):
+    """Modela funcionarios da vida real!"""
+    def __init__(self, employee_name):
+        self.employee_name = employee_name
+
+    def calculate_wage(self, hours):
+        self.hours = hours
+        return hours * 20.00
+
+# Adicione seu codigo abaixo!
+class PartTimeEmployee(Employee):
+	def calculate_wage
