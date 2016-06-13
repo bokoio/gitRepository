@@ -40,7 +40,7 @@ else:
 # 1**2 <= -1
 if 1**2 <= -1:
     bool_three = True
-else:    
+else:
     bool_three = False
 
 # 40 * 4 >= -4
@@ -226,7 +226,7 @@ def tip(bill):
     bill *= 1.15
     print "com gorjeta de: %f" % bill
     return bill
-    
+
 meal_cost = 100
 meal_with_tax = tax(meal_cost)
 meal_with_tip = tip(meal_with_tax)
@@ -238,7 +238,6 @@ def square(n):
     squared = n**2
     print "%d squared is %d." % (n, squared)
     return squared
-    
 # Chame a funcao quadrado na linha 9! Tenha certeza de
 # incluir o numero 10 entre os parenteses.
 square(10)
@@ -255,7 +254,7 @@ power(37,4)  # Adicione seus argumentos aqui!
 -----------------------------
 def one_good_turn(n):
     return n + 1
-    
+
 def deserves_another(m):
     return one_good_turn(m) + 2
 
@@ -267,7 +266,7 @@ def cube(number):
 def by_three(number):
     if cube(number) % 3 == 0:
         return cube(number)
-    else:        
+    else:
         return False
 ---------------
 
@@ -291,7 +290,7 @@ print everything       # Exibe tudo!
 def biggest_number(*args):
     print max(args)
     return max(args)
-    
+
 def smallest_number(*args):
     print min(args)
     return min(args)
@@ -380,7 +379,7 @@ def plane_ride_cost(city):
         return 222
     elif city == "Los Angeles":
         return 475
-        
+
 def rental_car_cost(days):
     cost_day = days * 40
     if days >= 7:
@@ -390,7 +389,7 @@ def rental_car_cost(days):
         cost_day -=20
         return cost_day
     else:
-        return cost_day        
+        return cost_day
 ---------------------------
 def hotel_cost(nights):
     return 140 * nights
@@ -404,7 +403,7 @@ def plane_ride_cost(city):
         return 222
     elif city == "Los Angeles":
         return 475
-        
+
 def rental_car_cost(days):
     cost_day = days * 40
     if days >= 7:
@@ -430,7 +429,7 @@ def plane_ride_cost(city):
         return 222
     elif city == "Los Angeles":
         return 475
-        
+
 def rental_car_cost(days):
     cost_day = days * 40
     if days >= 7:
@@ -460,7 +459,7 @@ def plane_ride_cost(city):
         return 222
     elif city == "Los Angeles":
         return 475
-        
+
 def rental_car_cost(days):
     cost_day = days * 40
     if days >= 7:
@@ -487,7 +486,7 @@ print "Somando os numeros nos indices 1 e 3..."
 print numbers[1] + numbers[3]
 ------------
 zoo_animals = ["pangolin", "casuar", "preguica", "tigre"]
-# Noite passada a preguica do zoologico atacou brutalmente 
+# Noite passada a preguica do zoologico atacou brutalmente
 # o pobre tigre e o devorou inteiro.
 
 # A feroz preguica foi substituida por uma amigavel hiena.
@@ -566,7 +565,7 @@ print "Ha " + str(len(menu)) + " itens no cardapio."
 print menu
 
 ---------------
-# key - animal_name : value - location 
+# key - animal_name : value - location
 zoo_animals = { 'Unicornio' : 'Casa de Algodao Doce',
 'Preguica' : 'Exibicao da Floresta Tropical',
 'Tigre de Bengala' : 'Casa da Selva',
@@ -600,7 +599,7 @@ inventory = {
 inventory['burlap bag'] = ['maca', 'pequeno rubi', 'bicho preguica']
 
 # Organizando a lista encontrada sob a chave 'pouch'
-inventory['pouch'].sort() 
+inventory['pouch'].sort()
 
 # Seu codigo aqui
 inventory ['pocket'] = ['concha', 'amora estranha', 'sujeira']
@@ -676,7 +675,7 @@ stock = {
     "laranja": 32,
     "pera": 15
 }
-    
+
 prices = {
     "banana": 4,
     "maca": 2,
@@ -839,21 +838,21 @@ def get_letter_grade(score):
     elif score >= 70 and score <= 80:
       return "C"
     elif score >= 60 and score <= 70:
-      return "D" 
+      return "D"
     else:
-      return "F" 
+      return "F"
 
-get_letter_grade(get_average(lloyd)) 
-print get_letter_grade(get_average(lloyd)) 
+get_letter_grade(get_average(lloyd))
+print get_letter_grade(get_average(lloyd))
 
 #Defina uma função chamada get_class_average com um argumento students. você pode esperar que students seja uma lista contendo seus três estudantes.
     #Primeiro, crie uma lista vazia chamada results.
     #Para cada item student na lista class, calcule get_average(student) e então chame results.append() com esse resultado.
     #Finalmente, retorne o resultado de chamar average() com results.
 
-def get_class_average(students):    
+def get_class_average(students):
     results = []
-    for x in students:        
+    for x in students:
         results.append(get_average(x))
     return average(results)
 
@@ -1297,10 +1296,10 @@ def print_grades(grades):
 
 def grades_sum(grades):
     total = 0
-    for grade in grades: 
+    for grade in grades:
         total += grade
     return total
-    
+
 def grades_average(grades):
     sum_of_grades = grades_sum(grades)
     average = sum_of_grades / float(len(grades))
@@ -1326,10 +1325,10 @@ def print_grades(grades):
 
 def grades_sum(grades):
     total = 0
-    for grade in grades: 
+    for grade in grades:
         total += grade
     return total
-    
+
 def grades_average(grades):
     sum_of_grades = grades_sum(grades)
     average = sum_of_grades / float(len(grades))
@@ -1358,7 +1357,7 @@ print grades_std_deviation(variance)
 to_five = ['A', 'B', 'C', 'D', 'E']
 
 print to_five[3:]
-# prints ['D', 'E'] 
+# prints ['D', 'E']
 
 print to_five[:2]
 # prints ['A', 'B']
@@ -1392,7 +1391,7 @@ No exemplo acima, exibimos ['E', 'D', 'C', 'B', 'A'].
 
 my_list = range(1, 11)
 backwards = my_list[::-1]
-print backwards 
+print backwards
 
 to_one_hundred = range(101)
 backwards_by_tens = to_one_hundred[::-10]
@@ -1587,7 +1586,7 @@ doze = 0b1100
 #Você também pode representar números nas bases 8 e 16 usando as funções oct() e hex(). (Mas não vamos abordá-las aqui).
 
 
-#Fornecemos no editor um exemplo da função bin. 
+#Fornecemos no editor um exemplo da função bin.
 #Vá em frente e use print e bin() para exibir as representações binárias dos números 2 a 5, cada uma em uma linha separada.
 print bin(1)
 0b1
@@ -1697,16 +1696,16 @@ a | b:  00101111  47
 #Então lembre-se, para cada bit em a e b:
 
 0 | 0 = 0
-0 | 1 = 1 
+0 | 1 = 1
 1 | 0 = 1
 1 | 1 = 1
-#O que significa 
+#O que significa
 110 (6) | 1010 (10) = 1110 (14)
 
 #Instruções
 #Para praticar, exiba (print) o resultado de usar | em
  #0b1110 e 0b101
- #como uma string binária. 
+ #como uma string binária.
  #Tente fazer isso por conta própria sem usar o operador | se puder evitar.
  print bin(0b1111)
 ----------------------------------------
@@ -2112,8 +2111,8 @@ print ocelot.health
 #embora básico, é similar ao que você veria em um programa real.
 
 #Instruções
-#Crie uma instância de ShoppingCart chamada my_cart. 
-#Inicialize-a com quaisquer valores que quiser, 
+#Crie uma instância de ShoppingCart chamada my_cart.
+#Inicialize-a com quaisquer valores que quiser,
 #então use o método add_item para adicionar um item ao seu carrinho.
 
 class ShoppingCart(object):
@@ -2204,7 +2203,7 @@ class Triangle(Shape):
 	    self.side3 = side3
 -----------------------------------------
 #Sobrepujar!
-#Às vezes você vai querer que uma classe que herda de outra não só tome os métodos e atributos do seu "pai", 
+#Às vezes você vai querer que uma classe que herda de outra não só tome os métodos e atributos do seu "pai",
 #mas que contorne um ou mais deles.
 
 class Employee(object):
@@ -2220,7 +2219,7 @@ class CEO(Employee):
 ceo = CEO("Emily")
 emp = Employee("Steve")
 emp.greet(ceo)
-# Alo, Emilyrr<rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<r<rr
+# Alo, Emily
 ceo.greet(emp)
 # Volte ao trabalho, Steve!
 
@@ -2231,7 +2230,7 @@ ceo.greet(emp)
 #Crie uma nova classe, PartTimeEmployee, que herda de Employee.
 #Dê a sua classe derivada um método calculate_wage que contorna o de Employee. Ele deve tomar self e hours como argumentos.
 #Como PartTimeEmployee.calculate_wage contona Employee.calculate_wage, ele ainda precisa fazer self.hours = hours.
-#Ele deve retornar o número de horas (hours que o trabalhador de meio período trabalhou multiplicado por 12.00 
+#Ele deve retornar o número de horas (hours que o trabalhador de meio período trabalhou multiplicado por 12.00
 #(ou seja, ele recebe R$12.00 por hora em vez de R$20.00).
 
 class Employee(object):
@@ -2245,4 +2244,675 @@ class Employee(object):
 
 # Adicione seu codigo abaixo!
 class PartTimeEmployee(Employee):
-	def calculate_wage
+	def calculate_wage(self, hours):
+            self.hours = hours
+            return hours * 12.00
+-----------------------------------------
+#Isso Parece um Trabalho Para...
+#Por outro lado, às vezes você estará trabalhando com uma classe derivada (ou subclasse) e percebe que
+#você sobrescreveu um método ou atributo definido na classe base daquela classe (também chamada pai ou superclasse)
+#que você realmente precisa. Não tema! Você pode acessar diretamente os atributos ou métodos de uma superclasse com
+#a chamada embutida super do Python.
+
+#A sintaxe é assim:
+
+class Derived(Base):
+   def m(self):
+       return super(Derived, self).m()
+#Onde m() é um método da classe base.
+
+#Instruções
+#Primeiro, dentro da sua classe PartTimeEmployee:
+
+#Adicione um método chamado full_time_wage com os argumentos self e hours.
+#Esse método dever retornar o resultado de chamar super para o método calculate_wage da classe pai de PartTimeEmployee.
+#Use o exemplo acima para obter ajuda.
+#Então, depois da sua classe:
+
+#Crie uma instância da classe PartTimeEmployee chamada milton. Não se esqueça de dar um nome a ela.
+#Finalmente, èxibao resultado de chamar o métodofulltimewage.
+#Você deve ver esse salário exibido como R$20.00 por hora! (Ou seja, para10, o resultado deve ser200.00`.)
+
+class Employee(object):
+    """Modela funcionarios da vida real!"""
+    def __init__(self, employee_name):
+        self.employee_name = employee_name
+
+    def calculate_wage(self, hours):
+        self.hours = hours
+        return hours * 20.00
+
+# Adicione seu codigo abaixo!
+class PartTimeEmployee(Employee):
+    def calculate_wage(self, hours):
+            self.hours = hours
+            return hours * 12.00
+
+    def full_time_wage(self, hours):
+            return super(PartTimeEmployee, self).calculate_wage(hours)
+milton = PartTimeEmployee("Milton")
+print milton.full_time_wage(10)
+--------------------------------
+#Básico Sobre Classes
+#Primeiro o essencial: vamos criar uma classe com que trabalhar.
+
+#Instruções
+#Crie uma classe, Triangle. Seu método__init__() deve tomar self, angle1, angle2, e angle3 como argumentos.
+#Tenha certeza as de definí-los corretamente no corpo do método __init__() (leia a Dica para saber mais).
+class Triangle(object):
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+--------------------------------
+#Aumente a Classe
+#Ótimo! Agora vamos adicionar uma variável membro de um método a nossa classe.
+
+#Instruções
+#Dentro da classe Triangle:
+
+#Crie uma variável chamada number_of_sides e iguale-a a 3.
+#Crie um método chamado check_angles.
+#A soma dos ângulos de um triângulo deve retornar True se a soma de self.angle1, self.angle2, e self.angle3 for igual a 180
+#e False caso contrário.
+class Triangle(object):
+    number_of_sides = 3
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+
+    def check_angles(self):
+        if self.angle1 + self.angle2 + self.angle3 == 180:
+            return True
+        else:
+            return False
+----------------------------
+#Crie uma Instância de um Objeto
+#Vamos avançar e criar uma instância da nossa classe Triangle.
+
+#Instruções
+#Crie uma variável chamada my_triangle e iguale-a a sua classe Triangle.
+#Passe para ela três ângulos que somem 180 (por exemplo, 90, 30, 60).
+#Exiba my_triangle.number_of_sides
+#Exiba my_triangle.check_angles()
+
+class Triangle(object):
+    number_of_sides = 3
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+
+    def check_angles(self):
+        if self.angle1 + self.angle2 + self.angle3 == 180:
+            return True
+        else:
+            return False
+
+my_triangle = Triangle(60,90,30)
+print my_triangle.number_of_sides
+print my_triangle.check_angles()
+-------------------------------
+#Herança
+#Finalmente, vamos criar uma classe Equilateral que herda da nossa classe Triangle.
+#(Um triângulo equilátero é um triângulo cujos ângulos são todos 60˚, o que também significa que os três lados têm comprimento igual).
+
+#Instruções
+#Crie uma classe chamada Equilateral que herda de Triangle.
+#Dentro de Equilateral, crie uma variável chamada angle e iguale-a a 60.
+#Crie uma função __init__() com apenas o parâmetro self, e iguale self.angle1, self.angle2, e self.angle3
+#a self.angle (já que os ângulos de um triângulo equilátero serão sempre iguais a 60˚).
+class Triangle(object):
+    number_of_sides = 3
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+
+    def check_angles(self):
+        if self.angle1 + self.angle2 + self.angle3 == 180:
+            return True
+        else:
+            return False
+
+class Equilateral(Triangle):
+    def __init__(self):
+        self.angle1 = self.angle
+        self.angle2 = self.angle
+        self.angle3 = self.angle
+
+my_triangle = Triangle(60,90,30)
+print my_triangle.number_of_sides
+print my_triangle.check_angles()
+---------------------------------
+#O básico sobre as classes
+#As classes podem ser muito úteis para armazenar objetos com seus próprios métodos e variáveis. Definir uma classe é muito parecido com definir uma função, mas neste caso usamos a palavra-chave "classe". Também usamos a palavra "objeto" entre parênteses porque queremos que nossas classe herdem a classe "object". Isso significa que nossa classe tem todas as propriedades de um "objeto", que é a classe mais simples e básica. Mais tarde, veremos que classe podem herdar outras classes mais complexas. Uma classe vazia seria assim:
+
+class ClassName(object):
+    # as declaracoes de classe vem aqui
+#Instruções
+#Defina uma nova classe chamada "Car". Por hora, já que temos que colocar algo na classe, use a palavra-chave "pass".
+class Car(object):
+    pass
+----------------------------------
+#Crie uma instância de uma classe
+#Podemos usar classes para criar novos objetos, que chamamos de instâncias dessas classes.
+
+#Criar uma nova instância de uma classe é tão fácil quanto dizer:
+
+newObject = ClassName()
+
+#Instruções
+#Abaixo da sua classe Car, crie um novo objeto chamado "my_car", que é uma instância de "Car".
+class Car(object):
+    pass
+my_car = Car()
+----------------------------------
+#Variáveis membros de classe
+#As classes podem ter variáveis membro que armazenam informações sobre cada objeto de classe. As chamamos de variáveis membro porque elas contém informações que pertencem ao objeto da classe.
+
+#Criar variáveis membro e atribui-lhes valores iniciais é tão fácil quanto criar qualquer outra variável:
+
+class ClassName(object):
+    memberVariable = "initialValue"
+
+#Instruções
+#Dentro da sua classe Car, substitua a declaração pass com uma nova variável membro chamada condição (condition)
+#e atribua a ela com ovalor inicial a string "novo".
+class Car(object):
+    condition = "novo"
+my_car = Car()
+-------------------------------
+#Chamando variáveis membros de classes
+#Cada objeto de classe que criamos tem seu próprio conjunto de variáveis membros.
+#Como criamos um objeto my_car que é uma instância da classe Car, my_car já deve ter uma variável membro chamada condição (condition). 
+#Esse atributo recebe um valor assim que my_car é criado.
+
+#Instruções
+#No final do seu código, use uma declaração print para exibir a condição (contidion) de my_car
+class Car(object):
+    condition = "novo"
+my_car = Car()
+print my_car.condition
+---------------------------------
+#Inicializando uma classe
+#Há uma função especial chamada __init__() que é chamada sempre que criamos uma nova instância de uma classe.
+#Ela existe por padrão, embora não a vejamos. Entretanto, podemos definir nossa própria função __init__() dentro da classe,
+#sobrepujando a versão padrão. Podemos querer fazer isso para fornecer mais variáveis de entrada,
+#como faríamos com qualquer outra função.
+
+#O primeiro argumento enviado para __init__() deve sempre ter a palavra-chave self - é assim que o objeto mantém internamente
+#controle sobre si mesmo - mas podemos passar variáveis adicionais depois disso.
+
+#Para atribuir uma variável à classe (criando uma variável membro), usamos notação de ponto.
+#Por exemplo, se enviarmos newVariable para nossa classe, diríamos, dentro da função __init__():
+
+self.new_variable = new_variable
+
+#Instruções
+#Defina a função __init__() da classe Car para tomar quatro entradas: self, model, color, e mpg.
+#Atribua as últimas três entradas às variáveis membro de mesmo nome usando a palavra-chave self.
+
+#Então, modifique o objeto my_car para fornecer as seguintes entradas na inicialização:
+
+model = "DeLorean"
+color = "prata"
+mpg = 88
+
+#Você não precisa incluir a palavra-chave self quando cria uma instância de classe, porque
+#self é adicionado automaticamente ao começo da sua lista de entradas pela definição da classe.
+class Car(object):
+    condition = "novo"
+my_car = Car()
+print my_car.condition
+-------------------------------------
+#Inicializando uma classe
+#Há uma função especial chamada __init__() que é chamada sempre que criamos uma nova instância de uma classe.
+#Ela existe por padrão, embora não a vejamos. Entretanto, podemos definir nossa própria função __init__() dentro da classe,
+#sobrepujando a versão padrão. Podemos querer fazer isso para fornecer mais variáveis de entrada, como faríamos com qualquer
+#outra função.
+
+#O primeiro argumento enviado para __init__() deve sempre ter a palavra-chave self - é assim que o objeto
+#mantém internamente controle sobre si mesmo - mas podemos passar variáveis adicionais depois disso.
+
+#Para atribuir uma variável à classe (criando uma variável membro), usamos notação de ponto.
+#Por exemplo, se enviarmos newVariable para nossa classe, diríamos, dentro da função __init__():
+
+self.new_variable = new_variable
+
+#Instruções
+#Defina a função __init__() da classe Car para tomar quatro entradas: self, model, color, e mpg.
+#Atribua as últimas três entradas às variáveis membro de mesmo nome usando a palavra-chave self.
+
+#Então, modifique o objeto my_car para fornecer as seguintes entradas na inicialização:
+
+model = "DeLorean"
+color = "prata"
+mpg = 88
+#Você não precisa incluir a palavra-chave self quando cria uma instância de classe,
+#porque self é adicionado automaticamente ao começo da sua lista de entradas pela definição da classe.
+class Car(object):
+    def __init__(self, model, color, mpg):
+        self.model = model
+        self.color = color
+        self.mpg = mpg
+    condition = "novo"
+my_car = Car(model, color, mpg)
+my_car.model = "DeLorean"
+my_car.color = "prata"
+my_car.mpg = 88
+-------------------------------
+#Referenciando variáveis membro
+#Chamar variáveis membro de classes funciona do mesmo modo independentemente de esses valores serem criados dentro da classe (como a condição (condition) de nosso carro, ou valores serem passados para o novo objeto na inicialização. Usamos notação de ponto para acessar as variáveis membro das classes, já qe essas variáveis pertencem ao objeto.
+
+#Por exemplo, se tivéssemos criado uma variável membro chamada new_variable, uma nova instância da classe chamada new_object poderia acessar essa variável dizendo:
+
+new_object.new_variable
+
+#Instruções
+#Agora que você criou my_car, exiba suas variáveis membro:
+#Primeiro exiba (print) o modelo (model) de meu carro (my_car).
+# Clique em "Não consegue seguir em frente?" para ver um exemplo.
+#Então, exiba (print) a cor (color) de meu carro (my_car)
+#Então, exiba (print) a mpg de my_car.
+class Car(object):
+    def __init__(self, model, color, mpg):
+        self.model = model
+        self.color = color
+        self.mpg = mpg
+    condition = "novo"
+my_car = Car("DeLorean", "prata", 88)
+print my_car.model
+print my_car.color
+print my_car.mpg
+----------------------------------------
+#Criando métodos de classe
+#Além das variáveis membro, as classes também podem ter seus próprios métodos. Por exemplo:
+
+class Square(object):
+  def __init__(self, side):
+    self.side = side
+
+  def perimeter(self):
+    return self.side * 4
+
+#O método de classe perimeter() é idêntico a definir qualquer outra função,
+#exceto que ela é excrita dentro da definição da classe Square.
+
+#Assim como quando definimos __init__(), você precisa fornecer self como primeiro argumento de qualquer método de classe.
+
+#Instruções
+#Dentro da classe Car, adicione um método chamado display_car()
+#a Car que referenciará as variáveis membro de Car para retornar a string
+#"Este e um [model] cor [color] que faz [mpg] MPG."
+
+class Car(object):
+    condition = "novo"
+    def __init__(self, model, color, mpg):
+        self.model = model
+        self.color = color
+        self.mpg   = mpg
+    def display_car(self):
+        return "Este e um " + self.model + " cor " + self.color + " que faz " + str(self.mpg) + " MPG."
+my_car = Car("DeLorean", "prata", 88)
+print my_car.display_car()
+print my_car.condition
+print my_car.model
+print my_car.color
+print my_car.mpg
+--------------------------------------
+#Modificando variáveis membro
+#Podemos modificar variáveis que pertencem a uma classe do mesmo modo que inicializamos essas variáveis membro.
+#Isso pode ser útil quando queremos mudar o valor que uma variável assume com base em algo que acontece dentro de um método de classe.
+
+#Instruções
+#Dentro da classe Car, adicione um método drive_car() que atribua self.condition à string "usado".
+#Remova a chamada a my_car.display_car() e em vez disso exiba apenas a condição (condition) de seu carro antes e depois de chamar o método drive_car().
+class Car(object):
+    condition = "novo"
+    def __init__(self, model, color, mpg):
+        self.model = model
+        self.color = color
+        self.mpg   = mpg
+    def display_car(self):
+        return "Este e um " + self.model + " cor " + self.color + " que faz " + str(self.mpg) + " MPG."
+    def drive_car(self):
+        self.condition = "usado"
+
+my_car = Car("DeLorean", "prata", 88)
+print my_car.condition
+print my_car.model
+print my_car.color
+print my_car.mpg
+print my_car.drive_car()
+print my_car.condition
+-------------------------------------------
+class Car(object):
+    condition = "novo"
+    def __init__(self, model, color, mpg):
+        self.model = model
+        self.color = color
+        self.mpg   = mpg
+    def display_car(self):
+        return "Este e um " + self.model + " cor " + self.color + " que faz " + str(self.mpg) + " MPG."
+    def drive_car(self):
+        self.condition = "usado"
+
+my_car = Car("DeLorean", "prata", 88)
+print my_car.condition
+print my_car.model
+print my_car.color
+print my_car.mpg
+print my_car.drive_car()
+print my_car.condition
+-----------------------------------------
+#Herança
+#Um dos benefícios das classes é que podemso criar classes mais complexas que herdam variáveis ou métodos das suas "classes pai".
+#Isso nos poupa tempo e ajuda a criar objetos mais complicados, já que essas "classes filhos" também podem incluir variáveis ou métodos adicionais.
+
+#Definimos uma classe "filho" que herda todas as variáveis e funções da classe "mãe", assim:
+
+class ClasseFilho(ClassePai):
+    # novas variáveis e funções
+
+#Instruções
+#Crie uma classe ElectricCar que herde de Car. Dê a sua nova classe um método __init__() que inclua uma variável membro "battery_type" além de model, color e mpg.
+
+#Então, crie um carro elétrico chamado "my_car" com battery_type "sal fundido". Forneça valores à sua escolha para as outras três entradas (model, color e mpg).
+class Car(object):
+    condition = "novo"
+    def __init__(self, model, color, mpg):
+        self.model = model
+        self.color = color
+        self.mpg   = mpg
+
+    def display_car(self):
+        return "Este e um " + self.model + " cor " + self.color + " que faz " + str(self.mpg) + " MPG."
+
+    def drive_car(self):
+        self.condition = "usado"
+
+class ElectricCar(Car):
+    def __init__(self,model, color, mpg,battery_type):
+        self.battery_type = battery_type
+        self.color = color
+        self.model = model
+        self.mpg = mpg
+
+
+#my_car = Car("DeLorean", "prata", 88)
+my_car = ElectricCar("DeLorean", "prata", 88,"sal fundido")
+print my_car.condition
+print my_car.model
+print my_car.color
+print my_car.mpg
+print my_car.drive_car()
+print my_car.condition
+--------------------------------
+#Métodos de contorno
+#Como nosso ElectricCar é um tipo de carro (Car) mais especializado, podemos dar a ElectricCar seu próprio método drive_car()
+#com funcionalidade diferente daquela da classe Car original.
+
+#Instruções
+#Dentro de ElectricCar adicione um novo método drive_car() que mude a condição (condition) para a string "estado de novo".
+#Então, fora de ElectricCar, exiba a condição (condition) de my_car
+#A seguir, dirija my_car chamando a função drive_car()
+#Finalmente, exiba novamente a condição (condition) de my_car
+class Car(object):
+    condition = "novo"
+    def __init__(self, model, color, mpg):
+        self.model = model
+        self.color = color
+        self.mpg   = mpg
+
+    def display_car(self):
+        return "Este e um " + self.model + " cor " + self.color + " que faz " + str(self.mpg) + " MPG."
+
+    def drive_car(self):
+        self.condition = "usado"
+
+class ElectricCar(Car):
+    def __init__(self,model, color, mpg,battery_type):
+        self.battery_type = battery_type
+        self.color = color
+        self.model = model
+        self.mpg = mpg
+    def drive_car(self):
+        self.condition = "estado de novo"
+
+
+#my_car = Car("DeLorean", "prata", 88)
+my_car = ElectricCar("DeLorean", "prata", 88,"sal fundido")
+print my_car.condition
+print my_car.model
+print my_car.color
+print my_car.mpg
+print my_car.drive_car()
+print my_car.condition
+--------------------------------
+#Criando classes úteis
+#É provável que você não vá projetar classes Car no mundo real tão cedo.
+#Usualmente, as classes são mais úteis para conter e acessar conjuntos abstratos de dados.
+
+#Um método de classe interessante de se sobrepujar é o método embutido __repr__(), que é uma abreviação para representation (representação);
+#fornecendo um valor de retornado neste método, podemos dizer ao Python como representar um objeto da nossa classe (por exemplo, quando usar uma declaração print).
+
+
+#Instruções
+#Defina uma classe Point3D que herde de object
+#Dentro da classe Point3D, defina uma função __init__() que aceite self, x, y, e z, e atribua esses números às variáveis membro self.x, self.y, self.z
+#Defina um método __repr__() que retorne "(%d, %d, %d)" % (self.x, self.y, self.z). Isso diz ao Python para representar este objeto no seguinte formato: (x, y, z).
+#Fora da definição de classe, crie uma variável chamada my_point contendo uma nova instância de Point3D com x=1, y=2, e z=3.
+#Finalmente, exiba my_point.
+class Point3D(object):
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+    def __repr__(self):
+        return ("(%d, %d, %d)") % (self.x, self.y, self,z)
+my_point = Point3D(1,2,3)
+print my_point
+-------------------------------
+#É Ver Para Crer
+#Até agora, os códigos em Python que você tem escrito vêm de uma fonte e vão para apenas um lugar:
+#você digita no teclado e seus resultados são exibidos no console. Mas e se você quiser ler informações de um arquivo no seu computador,
+#e/ou escrever essas informações em outro arquivo?
+
+#O processo é chamado I/O de arquivo (I/O significa "input/output", ou "entrada/saída"), e o Python tem diversas funções embutidas que tratam disso para você.
+
+#Verifique o código no editor à direita. Note que agora você tem uma aba "output.txt"
+#adicional, que é apenas um arquivo de texto em branco. Isso está prestes a mudar!
+
+#Instruções
+#Clique em Salvar e Enviar Código, então verifique a aba "output.txt" para ver os poderes de I/O de arquivo do Python em ação.
+my_list = [i**2 for i in range(1,11)]
+# Gera uma lista com os quadrados dos números 1 - 10
+
+f = open("output.txt", "w")
+
+for item in my_list:
+    f.write(str(item) + "\n")
+
+f.close()
+------------------------------
+#Vamos examinar o processo de escrever em um arquivo, um passo de cada vez.
+
+#O primeiro código que você viu ser executado no exercício anterior foi este:
+
+#f = open("output.txt", "w")
+#Isso instruiu o Python a abrir "output.txt" em modo "w" ("w" significa "write", "escrever").
+#Armazenamos o resultado dessa operação em um objeto de arqui, "f".
+
+#Fazer isso abre o modo de escrita e prepara o Python para enviar dados para o arquivo.
+
+#Instruções
+#Crie uma variável, "my_file", e iguale-a a uma chamada da função "open()" em "output.txt".
+#Neste caso, use "r+" como um segundo argumento à função,
+#de modo que o arquivo permitirá a você ler e escrever nele! (Leia a Dica para mais detalhes).
+my_file = open("output.txt", "r+")
+------------------------------------
+#Escrita
+#Bom trabalho! Agora é hora gravar alguns dados em nosso arquivo output.txt.
+
+#Adicionamos a compreensão de lista do primeiro exercício ao código no editor. Nosso objetivo neste exercício será escrever cada elemento da lista em output.txt (mostrado em uma nova aba acima do editor), com cada número em uma linha separada.
+
+#Podemos escrever em um arquivo Python assim:
+
+my_file.write("Dados a serem escritos")
+#A função write() toma um argumento no formato string, então precisamos fazer algumas coisas aqui:
+
+#Você deve fechar o arquivo. Você faz isso simplesmente chamando my_file.close() (fizemos isso para você no último exercício). Se você não fechar seu arquivo, o Python não escreverá nele corretamente. A partir de agora, você deve fechar seus arquivos!
+
+#Instruções
+#Percorra my_list para obter cada valor.
+#Use my_file.write() para escrever cada valor em output.txt.
+#Tenha certeza de chamar str() sobre os dados para que .write() os aceite.
+#Tenha certeza de adicionar uma nova linha ("\n") depois de cada elemento para garantir que cada item aprarecerá em sua própria linha.
+#Use my_file.close() para fechar o arquivo quando tiver terminado.
+
+my_list = [i**2 for i in range(1,11)]
+
+my_file = open("output.txt", "r+")
+
+# Adicione seu codigo abaixo!
+
+for item in my_list:
+    my_file.write(str(item) + "\n")
+
+my_file.close()
+-----------------------------------
+#Leitura
+#Excelente! Você é um profissional.
+
+#Finalmente, queremos saber como ler o conteúdo do nosso arquivo output.txt. Como você deve esperar, fazemos isso com a função read(), assim:
+
+print my_file.read()
+
+#Instruções
+#Declare uma variável, my_file, e iguale-a ao objeto arquivo retornado chamando open() com "output.txt" e "r".
+#A seguir, exiba (print) o resultado de usar .read() em my_file, como no exemplo acima.
+#Tenha certeza de fechar (.close()) seu arquivo quando tiver terminado! Todo tipo de desgraças pode acontecer você não o fizer.
+my_file = open("output.txt", "r")
+print my_file.read()
+my_file.close()
+-------------------------------
+#Lendo Entre as Linhas
+#E se quisermos ler um arquivo linha por linha, em vez de carregar todo o arquivo de uma vez. Felizmente, o Python inclui a função readline() que faz exatamente isso.
+
+#Se você abrir um arquivo e chamar .readline() sobre o objeto arquivo, terá a primeira linha do arquivo; subsequente chamadas de .readline() retornarão linhas sucessivas.
+
+#Instruções
+#Declare uma nova variável my_file e armazene o resultado de chamar open() no arquivo "text.txt" no modo somente leitura ("r"ead-only).
+#Exiba (print) o resultado de chamar my_file.readline() em três linhas separadas. Vê como ele pula para a próxima linha a cada vez?
+#Não se esqueça de fechar (close()) seu arquivo depois que terminar de usá-lo!).
+my_file = open("text.txt","r")
+print my_file.readline()
+print my_file.readline()
+print my_file.readline()
+my_file.close()
+---------------------------------
+#Serviço de Utilidade Pública: Buffer de Dados
+#Continuamos a dizer que você deve sempre fechar seus arquivos depois de terminar de escrever neles. Eis o porque!
+
+#Durante o processo de I/O, dados são armazenados em um buffer: isso significa que eles são mantidos em um local temporário antes de serem escritos no arquivo.
+
+#O Python não esvazia o buffer — ou seja, não escreve dados no arquivo — até ter certeza que você terminou de escrever. Um modo de fazer isso é fechar o arquivo. Se você escrever em um arquivo sem fechá-lo, os dados não serão gravados no arquivo.
+
+# Abra  o arquivo para leitura
+read_file = open("text.txt", "r")
+
+# Use um segundo controlador de arquivo para a abrir o arquivo para escrita
+write_file = open("text.txt", "w")
+# Escreva no arquivoe
+write_file.write("Nao fechar arquivos e MUITO RUIM.")
+
+
+
+# Tente ler o conteudo do arquivo
+print read_file.read()
+
+
+#Instruções
+#Veja nosso código extremamente ruim no editor. Clique em Salvar e Enviar Código — você notará que read_file.read() não lê nenhum dado! (O texto ainda aparece em text.txt, porque fechamos o arquivo para você por baixo da mesa. Segurança em primeiro lugar!.
+
+#Adicione uma chamada a write_file.close()` na linha 9.
+#Adicione read_file.close() na linha 13.
+#Rode o código novamente.
+#Desta vez, você verá os dados aparecerem!
+# Abra  o arquivo para leitura
+read_file = open("text.txt", "r")
+
+# Use um segundo controlador de arquivo para a abrir o arquivo para escrita
+write_file = open("text.txt", "w")
+# Escreva no arquivoe
+write_file.write("Nao fechar arquivos e MUITO RUIM.")
+
+write_file.close()
+
+# Tente ler o conteudo do arquivo
+print read_file.read()
+read_file.close()
+--------------------------------------
+#As Palavras-Chave 'with' e 'as'
+#O objetivo da programação é colocar o computador para trabalhar. Há um modo de fazer o Python fechar automaticamente nossos arquivos para nós?
+
+#É claro que há. Isso é Python.
+
+#Você pode não saber disso, mas os objetos arquivo contém um par especial de métodos embutidos: __enter__() e __exit__().
+#Os detalhes não são importantes, mas o que é importante é que quando o método __exit__() de um objeto arquivo é invocado,
+#ele automaticamente fecha o arquivo. Como invocamos esse método? Com with e as.
+
+#A sintaxe é assim:
+
+with open("file", "mode") as variable:
+    # Leia ou escreva no arquivo
+
+#Instruções
+#Verifique o exemplo no editor. Note que não fechamos (close()) nosso arquivo explicitamente, e lembre-se que se não fecharmos um arquivo,
+#nossos dados ficarão presos no buffer.
+#Clique em Salvar e Enviar Código, e verifique text.txt para ver os resultados.
+with open("text.txt", "w") as textfile:
+    textfile.write("Sucesso!")
+--------------------------------------
+#Tente Você Mesmo
+#Funcionou! Nosso programa Python escreveu com sucesso em text.txt.
+
+#Instruções
+#Agora é sua vez de tentar: escreva quaisquer dados que quiser no arquivo text.txt usando with...as. Dê a seu objeto arquivo o nome usual: my_file.
+with open("text.txt" , "w") as my_file:
+    my_file.write("Esta Finalizando o curso!! Uhull")
+---------------------------------------
+#Caso Encerrado?
+#Finalmente, queremos um modo de testar se um arquivo que abrimos está fechado.
+#Às vezes teremos muitos objetos arquivo abertos, e se não tivermso cuidado, eles não serão todos fechados. Como podemos testar isso?
+
+f = open("bg.txt")
+f.closed
+# Falso
+f.close()
+f.closed
+# Verdadeiro
+#Os objetos arquivo do Python têm um atributo "fechado" (closed) que é "verdadeiro" (True) quando o arquivo está fechado e "falso" (False) caso contrário.
+
+#Verificando file_object.closed, saberemos se nosso arquivo está fechado, e podemos usar close() se ele ainda estiver aberto.
+
+#Instruções
+#Abaixo do código with...as faça duas coisas:
+
+#Verifique se (if) o arquivo não está fechado.
+#Se esse for o caso, feche-o (.close()).
+#Você não precisa de um else aqui, já que sua declaração if não deve fazer nada se .closed for True.
+#Depois da sua declaração if, exiba (print) o valor de my_file.closed para garantir que seu arquivo está realmente fechado.
+with open("text.txt" , "w") as my_file:
+    my_file.write("Está Finalizando o curso!! Uhull")
+
+if my_file.closed:
+    my_file.close()
+print my_file.closed
+
+
+Conrado de Sa
+Dessa Studios
+OKtoplus
